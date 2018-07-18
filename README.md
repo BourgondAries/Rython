@@ -24,6 +24,7 @@ fact 10
 # Short Guide #
 
 Rython uses indentation to deduce where to put ( and ). A positive indentation after some line indicates a body:
+Indents are currently hardcoded as 2 spaces.
 ```
 define x
   + 1 2 3
@@ -50,3 +51,10 @@ define x
 # Surround Avoidance #
 
 To prevent a line from being surrounded by (), make ~ the first character after whitespace.
+
+# Installing #
+
+1. Download and instal [Racket](https://racket-lang.org/download/).
+2. Run `raco pkg install rython`
+3. Start a file with `#lang rython`, add some code
+4. Run `racket <your-file>`
